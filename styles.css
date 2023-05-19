@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif
+}
+
+.form {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v1016-c-08_1-ksh6mza3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f584d8501c27c5f649bc2cfce50705c0");
+    padding: 200px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.sub_container {
+    padding: 10px;
+}
+
+.sub_container_termos {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(11, 12, 12);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: rgb(46, 50, 50);
+    color: #d9d4d4;
+}
+
+#menssagem {
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+#nome,
+#email {
+    width: 100%;
+    height: 30px;
+    background-color: #d1c8c8;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+#curso {
+    width: auto;
+    background-color: #d1c8c8;
+    border: none;
+}
+
+#atendimento {
+    display: flex;
+    width: 400px;
+    height: 150px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+#atendimento:focus {
+    outline: none;
+    border-color: #2196F3;
+    box-shadow: 0 0 5px #2196F3;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* _____________________________________   */
+
+.termos {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-right: 14px;
+}
+
+.termos input {
+    display: none;
+}
+
+.termos label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.termos label::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.termos input:checked+label {
+    background-color: #2196F3;
+}
+
+.termos input:checked+label::after {
+    transform: translateX(20px);
+}
